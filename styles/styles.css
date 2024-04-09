@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #31112C;
+    --cor-secundaria: #FBDCC4;
+    --cor-terciaria: #F2A07B;
+    --cor-hover: #7D0633;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.header{
+    padding: 2% 0 0 15%;
+}
+
+.header__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.container {
+    margin: 5% 15%;
+    gap: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__content__title {
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+
+.myname:hover{
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.container__content__text{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria)
+}
+.container__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__links_title{
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+.container__links_navigation {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    width: 50%;
+    border-radius: 16px;
+    border: 2px solid  var(--cor-terciaria);
+    padding: 21.5px 0;
+
+    color:  var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.container__links_link:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentation__image{
+    width: 50%;
+} 
+
+.footer {
+    color: var(--cor-primaria);
+    background-color:  var(--cor-terciaria);
+
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400px;
+}
+
+@media (max-width: 1200px) {
+    .header{
+        padding:10%;
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .container{
+        margin: 5%;
+        flex-direction: column-reverse;
+    }
+    .container__content {
+        width: auto;
+    }
+}
